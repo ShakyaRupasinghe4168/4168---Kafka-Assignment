@@ -18,7 +18,7 @@ pip install confluent-kafka avro-python3 fastavro
 # Start Zookeeper
 bin/windows/zookeeper-server-start.bat config/zookeeper.properties
 
-# Start Kafka (in new terminal)
+# Start Kafka 
 bin/windows/kafka-server-start.bat config/server.properties
 ```
 
@@ -34,7 +34,7 @@ kafka-topics.bat --create --topic orders-dlq --bootstrap-server localhost:9092 -
 # Start consumer
 python consumer.py
 
-# Start producer (in new terminal)
+# Start producer 
 python producer.py
 ```
 
